@@ -1,0 +1,17 @@
+# Dependencies
+
+node_modules/
+
+# Environment files
+
+.env\*
+
+# Logs and runtime data
+
+_.log
+_.pid
+
+# Development/testing
+
+coverage/
+.nyc_output
