@@ -1,0 +1,7 @@
+# Essential exclusions for Docker build
+
+node_modules/
+.git/
+\*.log
+.DS_Store
+README.md

@@ -6,7 +6,7 @@ import { Badge, Card, Container, Row, Col, Spinner, Alert, Button } from "react-
 import { FiPlus, FiEdit3, FiTrash2, FiCheckCircle, FiClock } from "react-icons/fi";
 import "./HomePage.css";
 
-const API_URI = "http://localhost:5000";
+const API_URI = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
 const HomePage: React.FC = () => {
   const [tasks, setTasks] = useState<Task[]>([]);
