@@ -1,5 +1,4 @@
--- Database Initialization Orchestration
-
+-- Database Initialization Orchestration Script for Task Manager Project
 \echo 'Starting Task Manager database initialization...'
 
 \echo '1/4 Creating database schema...'
