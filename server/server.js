@@ -4,6 +4,7 @@ import cors from "cors";
 import healthRoutes from "./src/routes/healthRoutes.js";
 import { errorHandler } from "./src/middlewares/errorHandler.js";
 import pool from "./src/config/db.js";
+import taskRoutes from "./src/routes/taskRoutes.js";
 
 dotenv.config();
 
@@ -12,8 +13,9 @@ const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
-app.use(errorHandler);
 app.use("/health", healthRoutes);
+app.use("/tasks", taskRoutes);
+app.use(errorHandler);
 
 pool
   .connect()
