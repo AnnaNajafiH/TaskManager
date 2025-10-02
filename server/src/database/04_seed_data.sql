@@ -11,4 +11,3 @@ INSERT INTO tasks (title, description, completed) VALUES
 ('Add Sorting Features', 'Implement sorting options for task lists', false),
 ('Create User Dashboard', 'Design and implement user dashboard with statistics', false),
 ('Deploy Application', 'Prepare application for production deployment', false);
-ON CONFLICT (id) DO NOTHING;
